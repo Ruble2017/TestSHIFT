@@ -12,8 +12,6 @@ import com.tomsk.testshift.screens.MainDestination
 import com.tomsk.testshift.screens.MainScreen
 import com.tomsk.testshift.screens.PersonDetailsDestination
 import com.tomsk.testshift.screens.PersonDetailsScreen
-import com.tomsk.testshift.screens.PersonViewModel
-
 
 @Composable
 fun AppNavGraph()

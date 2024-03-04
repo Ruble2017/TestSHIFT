@@ -33,7 +33,6 @@ import androidx.compose.runtime.getValue
 import androidx.compose.runtime.livedata.observeAsState
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
-import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.asImageBitmap
@@ -73,17 +72,6 @@ fun MainScreen(
     personeUiState: PersoneUiState = personViewModel.personUiState
 ) {
     val itemList by personViewModel.persons.observeAsState(listOf())
-
-    val per = remember {
-        mutableStateOf(personeUiState)
-    }
-//    val per by remember {
-//        mutableStateOf( personViewModel.personeUiState)
-//    }
-//    val personUiState: PersoneUiState by remember {
-//        mutableStateOf(PersoneUiState.Success(true))
-//    }
-
     Scaffold(
         topBar = {
             TopAppBar(
